@@ -19,6 +19,7 @@ mkdir -p ~/.config/nvim/plugged
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 nvim +PlugInstall +qall
 
+sudo apt install clang-format-9
 snap install universal-ctags
 sudo apt-get install fonts-powerline
 sudo snap install ripgrep --classic
