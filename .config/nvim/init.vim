@@ -4,6 +4,8 @@ let g:python3_host_prog = '/home/esimpson/anaconda3/bin/python'
 " {{{ Plugins
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'vhdirk/vim-cmake'
+Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 Plug 'jeetsukumaran/vim-buffergator'
@@ -212,6 +214,11 @@ let g:comfortable_motion_air_drag = 4.0
 " " {{{ Fuzzy finder
 nnoremap <silent> <leader>f :FZF<cr>
 nnoremap <silent> <leader>F :FZF ~<cr>
+" " }}}
+"
+" " {{{ CMake
+nnoremap <silent> <leader>cm :CMake<cr>
+nnoremap <silent> <leader>m :make<cr>
 " " }}}
 
 " Configuration for vim-scala
