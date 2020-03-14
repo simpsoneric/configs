@@ -4,6 +4,8 @@ let g:python3_host_prog = '/home/esimpson/anaconda3/bin/python'
 " {{{ Plugins
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'sbdchd/neoformat', { 'on': 'Neoformat' }
+
 Plug 'vhdirk/vim-cmake'
 Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
