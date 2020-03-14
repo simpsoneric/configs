@@ -15,9 +15,13 @@ NeoVim Settings
 sudo apt install neovim
 sudo apt install python-dev python-pip python3-dev python3-pip
 pip install neovim
-mkdir -p ~/.config/nvim/bundle
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.config/nvim/bundle/Vundle.vim
-nvim +PluginInstall +qall
+mkdir -p ~/.config/nvim/plugged
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+nvim +PlugInstall +qall
+
+snap install universal-ctags
+sudo apt-get install fonts-powerline
+sudo snap install ripgrep --classic
 ```
 
 Cmake Settings
